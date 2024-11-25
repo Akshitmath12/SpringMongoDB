@@ -1,0 +1,57 @@
+syntax = "proto3";
+
+package user;
+
+// The User service definition.
+service UserService {
+  // Create a new user.
+  rpc CreateUser(CreateUserRequest) returns (UserResponse);
+
+  // Retrieve an existing user by ID.
+  rpc GetUser(GetUserRequest) returns (UserResponse);
+
+  // Update an existing user.
+  rpc UpdateUser(UpdateUserRequest) returns (UserResponse);
+
+  // Delete a user by ID.
+  rpc DeleteUser(DeleteUserRequest) returns (DeleteUserResponse);
+}
+
+// Message for creating a user.
+message CreateUserRequest {
+  string name = 1;
+  string email = 2;
+  int32 age = 3;
+}
+
+// Message for retrieving a user.
+message GetUserRequest {
+  string id = 1;
+}
+
+// Message for updating a user.
+message UpdateUserRequest {
+  string id = 1;
+  string name = 2;
+  string email = 3;
+  int32 age = 4;
+}
+
+// Message for deleting a user.
+message DeleteUserRequest {
+  string id = 1;
+}
+
+// Common user response message.
+message UserResponse {
+  string id = 1;
+  string name = 2;
+  string email = 3;
+  int32 age = 4;
+}
+
+// Response message for delete operation.
+message DeleteUserResponse {
+  string id = 1;
+  string message = 2;
+}
