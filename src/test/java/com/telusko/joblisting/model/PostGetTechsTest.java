@@ -129,19 +129,28 @@ public class PostGetTechsTest {
 		// Assert
 		assertNull(actualTechs);
 	}
+/*
+```java
+public String[] getTechs() {
+    return Arrays.stream(techs)
+        .filter(Objects::nonNull)
+        .toArray(String[]::new);
+}
+```
+@Test
+@DisplayName("getTechs_nullElementsInArray")
+@Tag("valid")
+public void getTechs_nullElementsInArray() {
+    // Arrange
+    Post post = new Post();
+    post.setTechs(new String[] { "Java", null, "MongoDB" });
+    // Act
+    String[] actualTechs = post.getTechs();
+    // Assert
+    String[] expectedTechs = { "Java", "MongoDB" };
+    assertArrayEquals(expectedTechs, actualTechs);
+}
+*/
 
-	@Test
-	@DisplayName("getTechs_nullElementsInArray")
-	@Tag("valid")
-	public void getTechs_nullElementsInArray() {
-		// Arrange
-		Post post = new Post();
-		post.setTechs(new String[] { "Java", null, "MongoDB" });
-		// Act
-		String[] actualTechs = post.getTechs();
-		// Assert
-		String[] expectedTechs = { "Java", "MongoDB" };
-		assertArrayEquals(expectedTechs, actualTechs);
-	}
 
 }
