@@ -1,0 +1,33 @@
+Functional Test Cases:
+
+1. Test Case: Google's Algorithm Changes
+   - Input: A well-written, authoritative content 
+   - Expected Output: The content should be favored by Google's algorithms
+   - Edge Case: When the content is poorly written or hastily produced, it should not be favored by the algorithms
+
+2. Test Case: Content Evaluation by Google's bots
+   - Input: An article that is well-edited and comprehensive
+   - Expected Output: Google's bots should positively evaluate the article
+   - Edge Case: If the article appears sloppy or hastily produced, or doesn't provide a complete description of the topic, it should not be positively evaluated 
+
+3. Test Case: Crawling and Indexing Sites for the Google Index
+   - Input: A high-quality site that incorporates user feedback
+   - Expected Output: The site should be successfully crawled and indexed by Google
+   - Edge Case: If the site does not meet Google's quality standards or doesn't incorporate user feedback, it should not be successfully crawled and indexed
+
+Non-Functional Test Cases:
+
+1. Test Case: Performance of Google's Algorithms
+   - Input: A large number of well-written, authoritative content 
+   - Expected Output: The algorithms should be able to process the content efficiently without any significant delays
+   - Edge Case: When the content volume is extremely high, the performance of the algorithms should not be significantly impacted
+
+2. Test Case: Reliability of Google's Bots
+   - Input: A series of articles with varying quality and comprehensiveness
+   - Expected Output: The bots should consistently evaluate the articles based on the predefined standards
+   - Edge Case: The bots' evaluations should not be influenced by factors other than the quality and comprehensiveness of the articles
+
+3. Test Case: Scalability of Google's Crawling and Indexing System
+   - Input: A large number of high-quality sites that incorporate user feedback
+   - Expected Output: The system should be able to crawl and index the sites without any significant delays or failures
+   - Edge Case: When the number of sites is extremely high, the system's performance should not be significantly impacted.
