@@ -1,0 +1,68 @@
+Functional Test Cases:
+
+1. Roost Helm Chart
+   - Test Case: Check the accessibility of the session recording link
+     - Input: Click on the session recording link
+     - Expected Output: Session recording video should play without any issues
+
+   - Test Case: Verify the documentation link accessibility
+     - Input: Click on the documentation link
+     - Expected Output: Documentation should open without any issues
+
+   - Test Case: Verify the main repo link
+     - Input: Click on the main repo link
+     - Expected Output: The main repo should open without any issues
+
+   - Test Case: Verify the internal development repo link
+     - Input: Click on the internal development repo link
+     - Expected Output: The internal development repo should open without any issues
+
+2. Application and UI test
+   - Test Case: Verify the accessibility of session recording link
+     - Input: Click on the session recording link
+     - Expected Output: Session recording video should play without any issues
+
+   - Test Case: Verify the documentation links
+     - Input: Click on the documentation links
+     - Expected Output: Documentation should open without any issues
+
+   - Test Case: Verify the development repository link
+     - Input: Click on the development repository link
+     - Expected Output: The development repository should open without any issues
+
+3. AI Server / Test Runner and RoostGPT Dockerfile
+   - Test Case: Verify the accessibility of session recording link
+     - Input: Click on the session recording link
+     - Expected Output: Session recording video should play without any issues
+
+   - Test Case: Verify the development repository paths
+     - Input: Click on the development repository paths
+     - Expected Output: The development repository should open without any issues
+
+Non-Functional Test Cases:
+
+1. Test Case: Verify the load time of session recording video
+   - Input: Click on the session recording link
+   - Expected Output: The session recording video should load within a reasonable time frame
+
+2. Test Case: Verify the load time of documentation
+   - Input: Click on the documentation link
+   - Expected Output: The documentation should load within a reasonable time frame
+
+3. Test Case: Verify the load time of the main repo
+   - Input: Click on the main repo link
+   - Expected Output: The main repo should load within a reasonable time frame
+
+4. Test Case: Verify the load time of the internal development repo
+   - Input: Click on the internal development repo link
+   - Expected Output: The internal development repo should load within a reasonable time frame
+
+5. Test Case: Verify the load time of the development repository
+   - Input: Click on the development repository link
+   - Expected Output: The development repository should load within a reasonable time frame
+
+6. Test Case: Verify the load time of the development repository paths
+   - Input: Click on the development repository paths
+   - Expected Output: The development repository paths should load within a reasonable time frame
+
+Note: The above test cases should be repeated for all the sections in the user story.
