@@ -1,0 +1,55 @@
+USER STORY DESCRIPTION:
+As a registered user, I want to be able to log in to my account so that I can access my personal dashboard with my profile, messages, and settings.
+
+FUNCTIONAL TEST CASES:
+
+1. Test Case 1: Verify successful login
+   - Input: Valid username and password
+   - Expected Output: User is redirected to their personal dashboard
+   - Edge Cases: None
+
+2. Test Case 2: Verify login with incorrect password
+   - Input: Valid username and incorrect password
+   - Expected Output: Error message "Incorrect password. Try again."
+
+3. Test Case 3: Verify login with incorrect username
+   - Input: Incorrect username and valid password
+   - Expected Output: Error message "Username does not exist."
+
+4. Test Case 4: Verify login with empty username and password fields
+   - Input: Empty username and password fields
+   - Expected Output: Error message "Username and password are required."
+
+5. Test Case 5: Verify the 'Forgot Password' functionality
+   - Input: Click on 'Forgot Password' link
+   - Expected Output: User is redirected to 'Reset Password' page
+
+6. Test Case 6: Verify the visibility of password while typing
+   - Input: Type in password field
+   - Expected Output: The password should be masked (******)
+
+7. Test Case 7: Verify the session timeout after a certain period of inactivity
+   - Input: Do not interact with the system for a certain period
+   - Expected Output: Session is expired and user is logged out automatically
+
+NON FUNCTIONAL TEST CASES:
+
+1. Test Case 1: Verify the load time of login page
+   - Input: Open login page
+   - Expected Output: Login page should load in less than 2 seconds
+
+2. Test Case 2: Verify the system's behavior under heavy load
+   - Input: Simulate multiple users logging in at the same time
+   - Expected Output: System should be able to handle the load without crashing
+
+3. Test Case 3: Verify the security of the login process
+   - Input: Attempt to login using SQL Injection or Cross-Site Scripting
+   - Expected Output: System should not allow unauthorized access
+
+4. Test Case 4: Verify the compatibility of the login page on different browsers
+   - Input: Open login page on different browsers (Chrome, Firefox, Safari, Edge)
+   - Expected Output: Login page should display and function correctly on all tested browsers
+
+5. Test Case 5: Verify the responsiveness of the login page on different devices
+   - Input: Open login page on different devices (Desktop, Tablet, Mobile)
+   - Expected Output: Login page should display and function correctly on all tested devices.
