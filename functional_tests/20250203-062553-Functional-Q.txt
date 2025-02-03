@@ -1,0 +1,49 @@
+Functional Test Cases:
+
+1. Test Case: Verify the functionality of switching auth tokens after selecting the connector.
+    - Input: Select the connector and try to switch auth token.
+    - Expected Output: User should be able to switch auth token successfully.
+    - Edge Case: What if the user tries to switch the auth token without selecting the connector first?
+
+2. Test Case: Verify the toast message in Gemini Pro.
+    - Input: Perform an action that triggers the toast message.
+    - Expected Output: Toast message should be displayed correctly and should not be 'undefined'.
+    - Edge Case: What if no action is performed? The toast message should not appear.
+
+3. Test Case: Verify the segregation of Vertex File Input and Vertex Token Input components.
+    - Input: Check the code for these components.
+    - Expected Output: These components should be segregated clearly in the code.
+
+4. Test Case: Verify the shift of the API of fetching vertex token from the Json file to aiModel.handles.js
+    - Input: Fetch vertex token.
+    - Expected Output: The vertex token should be fetched from aiModel.handles.js and not from the Json file.
+
+5. Test Case: Verify the functionality present in aiModels.js that can be called in connector as well.
+    - Input: Call the function from connector.
+    - Expected Output: The function should work correctly when called from connector.
+
+6. Test Case: Verify the shift of verifySelectedModels code to the aiModels.js
+    - Input: Check the code for verifySelectedModels.
+    - Expected Output: The code for verifySelectedModels should be present in aiModels.js.
+
+Non-Functional Test Cases:
+
+1. Test Case: Verify the performance of the system after implementing the changes.
+    - Input: Perform various operations in the system.
+    - Expected Output: The system should perform optimally without any lags or crashes.
+
+2. Test Case: Verify the security of the auth token switching operation.
+    - Input: Try to switch auth token.
+    - Expected Output: The operation should be secure and the auth token should not be visible or accessible to unauthorized users.
+
+3. Test Case: Verify the usability of the system after implementing the changes.
+    - Input: Use the system normally.
+    - Expected Output: The system should be user-friendly and easy to use.
+
+4. Test Case: Verify the maintainability of the code after segregation and shifting of components and code.
+    - Input: Check the code.
+    - Expected Output: The code should be clean, organized, and easy to maintain.
+
+5. Test Case: Verify the reliability of the system after implementing the changes.
+    - Input: Use the system continuously for a certain period of time.
+    - Expected Output: The system should be reliable and should not crash or show any errors.
