@@ -1,0 +1,139 @@
+Based on the given user story description, here are the test cases/scenarios covering both functional and non-functional tests:
+
+# Functional Tests
+
+## Test Case 1: Verify the Vertex File Input component
+- **Test Steps:**
+  1. Navigate to the Vertex AI Model input flow
+  2. Select the Vertex File Input component
+  3. Provide valid input file(s)
+  4. Verify the input file(s) are processed correctly
+
+- **Input Values:**
+  - Valid input file(s) for Vertex AI Model
+
+- **Expected Output:**
+  - The Vertex File Input component should process the provided input file(s) correctly without any issues.
+
+- **Edge Cases:**
+  - Test with different file formats (e.g., text, CSV, JSON)
+  - Test with large file sizes
+  - Test with empty or corrupt files
+
+## Test Case 2: Verify the Vertex Token Input component
+- **Test Steps:**
+  1. Navigate to the Vertex AI Model input flow
+  2. Select the Vertex Token Input component
+  3. Provide a valid authentication token
+  4. Verify the token is accepted and processed correctly
+
+- **Input Values:**
+  - Valid authentication token for Vertex AI
+
+- **Expected Output:**
+  - The Vertex Token Input component should accept and process the provided token correctly without any issues.
+
+- **Edge Cases:**
+  - Test with an invalid or expired token
+  - Test with an empty token field
+
+## Test Case 3: Verify the integration between Vertex File Input and Vertex Token Input components
+- **Test Steps:**
+  1. Navigate to the Vertex AI Model input flow
+  2. Select both the Vertex File Input and Vertex Token Input components
+  3. Provide valid input file(s) and authentication token
+  4. Verify the components work together correctly and process the input data
+
+- **Input Values:**
+  - Valid input file(s) for Vertex AI Model
+  - Valid authentication token for Vertex AI
+
+- **Expected Output:**
+  - The Vertex File Input and Vertex Token Input components should work together seamlessly, processing the input data correctly without any issues.
+
+- **Edge Cases:**
+  - Test with different combinations of valid and invalid input file(s) and tokens
+
+## Test Case 4: Verify the API for fetching the Vertex token
+- **Test Steps:**
+  1. Navigate to the relevant API endpoint for fetching the Vertex token
+  2. Send a valid request with appropriate parameters
+  3. Verify the API response contains the expected Vertex token
+
+- **Input Values:**
+  - Valid request parameters for fetching the Vertex token
+
+- **Expected Output:**
+  - The API should return a successful response containing the expected Vertex token.
+
+- **Edge Cases:**
+  - Test with invalid or missing request parameters
+  - Test with different authentication mechanisms (e.g., API key, OAuth)
+
+## Test Case 5: Verify the functionality of the `verifySelectedModels` code
+- **Test Steps:**
+  1. Navigate to the Vertex AI Model input flow
+  2. Select a Vertex AI Model
+  3. Verify the `verifySelectedModels` code correctly validates the selected model
+
+- **Input Values:**
+  - Various Vertex AI Models (valid and invalid)
+
+- **Expected Output:**
+  - The `verifySelectedModels` code should correctly validate the selected Vertex AI Model and provide appropriate feedback or error messages.
+
+- **Edge Cases:**
+  - Test with different types of Vertex AI Models
+  - Test with models that have specific validation requirements
+
+# Non-Functional Tests
+
+## Performance Testing
+- Test the response time and throughput of the Vertex AI Model input flow under various load conditions
+- Measure the performance of the API for fetching the Vertex token under different load scenarios
+
+## Security Testing
+- Test the authentication and authorization mechanisms for accessing the Vertex AI functionality
+- Verify proper input validation and sanitization to prevent injection attacks
+- Test for potential vulnerabilities (e.g., cross-site scripting, cross-site request forgery)
+
+## Usability Testing
+- Evaluate the user-friendliness and intuitive nature of the Vertex AI Model input flow
+- Test the clarity and accessibility of error messages and notifications
+- Gather feedback from users on the overall user experience
+
+## Compatibility Testing
+- Test the Vertex AI functionality across different browsers and versions
+- Verify compatibility with various operating systems and devices
+- Ensure consistent behavior across different environments and configurations
+
+## Localization Testing
+- Test the Vertex AI functionality with different language settings and locales
+- Verify proper translation and formatting of text, dates, and numbers
+
+## Accessibility Testing
+- Test the Vertex AI functionality for compliance with accessibility standards (e.g., WCAG)
+- Ensure proper keyboard navigation and screen reader compatibility
+- Verify color contrast and other visual accessibility aspects
+
+## Error Handling and Recovery Testing
+- Test various error scenarios (e.g., network failures, server errors, invalid input)
+- Verify proper error handling and meaningful error messages
+- Test the recovery mechanisms and fallback options in case of failures
+
+## Integration Testing
+- Test the integration of the Vertex AI functionality with other components or systems
+- Verify data flow and communication between different modules
+- Ensure consistent behavior when interacting with external APIs or services
+
+## Stress and Load Testing
+- Test the Vertex AI functionality under high load and stress conditions
+- Simulate a large number of concurrent users or requests
+- Verify the system's ability to handle and recover from excessive load
+
+## Documentation and Help Testing
+- Review the documentation and help resources for completeness and accuracy
+- Verify that the instructions and explanations are clear and easy to understand
+- Test the functionality based on the provided documentation and help resources
+
+Note: The above test cases and scenarios are intended to provide a comprehensive coverage of functional and non-functional testing aspects. However, depending on the specific requirements and constraints of your project, you may need to prioritize or modify these test cases accordingly.
