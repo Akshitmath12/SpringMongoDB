@@ -1,0 +1,105 @@
+Based on the given user story description, here are the test cases/scenarios covering functional and non-functional tests:
+
+# Functional Tests
+
+## Vertex AI Model Input Flow
+
+- **Test Case 1: Verify the UI flow for selecting the Vertex AI model**
+  - **Steps:**
+    1. Navigate to the Vertex AI model input page
+    2. Select the desired Vertex AI model (e.g., Fine-tune model)
+  - **Input:** Select the "Fine-tune model" radio button
+  - **Expected Output:** The UI should respond without any errors or unresponsiveness.
+
+- **Test Case 2: Verify the UI error handling for invalid model selection**
+  - **Steps:**
+    1. Navigate to the Vertex AI model input page
+    2. Attempt to select an invalid or non-existent Vertex AI model
+  - **Input:** Select an invalid or non-existent model
+  - **Expected Output:** The UI should display an appropriate error message and prevent further progression.
+
+- **Test Case 3: Verify the file input functionality for Vertex AI models**
+  - **Steps:**
+    1. Navigate to the Vertex AI model input page
+    2. Select the desired Vertex AI model
+    3. Provide a valid file input (e.g., text file, image file, etc.)
+  - **Input:** Select a valid file input
+  - **Expected Output:** The UI should accept the file input and proceed to the next step without any issues.
+
+- **Test Case 4: Verify the token input functionality for Vertex AI models**
+  - **Steps:**
+    1. Navigate to the Vertex AI model input page
+    2. Select the desired Vertex AI model
+    3. Provide a valid token input
+  - **Input:** Enter a valid token
+  - **Expected Output:** The UI should accept the token input and proceed to the next step without any issues.
+
+- **Test Case 5: Verify the error handling for invalid token input**
+  - **Steps:**
+    1. Navigate to the Vertex AI model input page
+    2. Select the desired Vertex AI model
+    3. Provide an invalid token input
+  - **Input:** Enter an invalid token
+  - **Expected Output:** The UI should display an appropriate error message and prevent further progression.
+
+## Jira Access Token and Connector
+
+- **Test Case 6: Verify the error notification for invalid Jira access token**
+  - **Steps:**
+    1. Navigate to the Jira connector configuration page
+    2. Enter an invalid Jira access token
+    3. Attempt to connect to Jira
+  - **Input:** Invalid Jira access token
+  - **Expected Output:** The UI should display an appropriate error notification indicating that the provided token is invalid.
+
+- **Test Case 7: Verify the successful connection with a valid Jira access token**
+  - **Steps:**
+    1. Navigate to the Jira connector configuration page
+    2. Enter a valid Jira access token
+    3. Attempt to connect to Jira
+  - **Input:** Valid Jira access token
+  - **Expected Output:** The UI should successfully connect to Jira without any errors.
+
+# Non-functional Tests
+
+## Usability
+
+- **Test Case 8: Verify the user-friendliness of the UI**
+  - **Steps:**
+    1. Navigate through various pages and features of the application
+    2. Interact with different UI elements (e.g., buttons, dropdown menus, input fields)
+  - **Expected Output:** The UI should be intuitive, easy to navigate, and provide clear instructions and feedback to the user.
+
+## Compatibility
+
+- **Test Case 9: Verify compatibility across different browsers**
+  - **Steps:**
+    1. Access the application using different web browsers (e.g., Chrome, Firefox, Safari, Edge)
+    2. Perform various actions and test cases
+  - **Expected Output:** The application should function consistently across all supported browsers without any issues.
+
+## Performance
+
+- **Test Case 10: Verify the application's performance under high load**
+  - **Steps:**
+    1. Simulate a high load scenario by generating multiple concurrent requests or simulating a large number of users
+    2. Monitor the application's response times, resource utilization, and stability
+  - **Expected Output:** The application should remain responsive and stable even under high load conditions, without any significant performance degradation.
+
+## Security
+
+- **Test Case 11: Verify the application's security measures**
+  - **Steps:**
+    1. Attempt various security testing techniques (e.g., input validation, cross-site scripting, SQL injection)
+    2. Ensure that the application adheres to industry-standard security best practices
+  - **Expected Output:** The application should be resilient against common security vulnerabilities and protect user data and sensitive information.
+
+## Accessibility
+
+- **Test Case 12: Verify the application's accessibility features**
+  - **Steps:**
+    1. Use assistive technologies (e.g., screen readers, voice recognition software) to navigate and interact with the application
+    2. Ensure that the application follows accessibility guidelines and supports users with disabilities
+  - **Expected Output:** The application should be accessible to users with disabilities, providing alternative means of interaction and adhering to accessibility standards.
+
+Note: These test cases serve as a starting point and should be further expanded and refined based on the specific requirements and edge cases of the application. Additionally, it's recommended to include data-driven test cases and negative test cases to ensure comprehensive testing coverage.
