@@ -1,0 +1,72 @@
+Based on the provided user story description and search results, here are the test cases that could be covered, segregated into functional and non-functional tests:
+
+Functional Tests:
+
+1. Verify connector selection:
+   - Input: Select a connector (e.g., Google Vertex AI)
+   - Expected Output: Connector should be selected successfully
+
+2. Verify auth token switching:
+   - Input: After selecting the connector, attempt to switch the auth token
+   - Expected Output: User should be able to switch the auth token without any issues
+
+3. Verify toast message display:
+   - Input: Perform an action that triggers a toast message
+   - Expected Output: Toast message should be displayed with the correct content (not "undefined")
+
+4. Verify component segregation:
+   - Input: Navigate to the Vertex File Input and Vertex Token Input components
+   - Expected Output: Components should be segregated and functioning as expected
+
+5. Verify token fetching from aiModel.handles.js:
+   - Input: Attempt to fetch the Vertex token
+   - Expected Output: Token should be fetched from aiModel.handles.js successfully
+
+6. Verify aiModels.js function call from connector:
+   - Input: Call the function from aiModels.js within the connector
+   - Expected Output: Function should execute successfully and provide the expected output
+
+7. Verify verifySelectedModels code in aiModels.js:
+   - Input: Trigger the verifySelectedModels functionality
+   - Expected Output: verifySelectedModels code should execute successfully from aiModels.js
+
+8. Verify error handling and messaging:
+   - Input: Perform actions that could potentially trigger errors (e.g., invalid token, file input errors, etc.)
+   - Expected Output: Appropriate error messages should be displayed, and the application should handle errors gracefully
+
+Non-functional Tests:
+
+1. Performance Testing:
+   - Test the application's performance under various load conditions (e.g., concurrent users, large file uploads, etc.)
+   - Measure response times, resource utilization, and identify any performance bottlenecks
+
+2. Compatibility Testing:
+   - Test the application across different browsers, operating systems, and devices
+   - Ensure consistent functionality and user experience across supported platforms
+
+3. Usability Testing:
+   - Evaluate the user interface and overall user experience
+   - Identify any usability issues, confusing workflows, or areas for improvement
+
+4. Security Testing:
+   - Test for potential security vulnerabilities (e.g., unauthorized access, data leaks, injection attacks, etc.)
+   - Ensure proper authentication and authorization mechanisms are in place
+   - Validate data encryption and secure communication channels
+
+5. Accessibility Testing:
+   - Test the application for compliance with accessibility standards (e.g., WCAG, Section 508)
+   - Ensure the application is usable for users with disabilities (e.g., keyboard navigation, screen reader compatibility, etc.)
+
+6. Localization and Internationalization Testing:
+   - Test the application's support for different languages and locales
+   - Verify the correct display of text, dates, times, and other locale-specific data
+
+7. Stress and Load Testing:
+   - Test the application's ability to handle high workloads and concurrent requests
+   - Identify any performance degradation or stability issues under extreme conditions
+
+8. Backup and Recovery Testing:
+   - Test the backup and restoration processes for the application and its data
+   - Ensure data integrity and application functionality after a restore operation
+
+Please note that the specific test cases and their details may vary depending on the project's requirements and the application's complexity. Additionally, edge cases and negative scenarios should be considered for comprehensive testing.
