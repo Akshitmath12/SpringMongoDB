@@ -1,0 +1,68 @@
+Here are the functional and non-functional test cases for the given credit card lifecycle user story:
+
+Functional Test Cases:
+
+**1. Credit Card Application**
+- Test Case 1:
+    - Input: Valid personal information (name, address, date of birth), income details, contact information
+    - Action: Submit credit card application 
+    - Expected Output: Application submitted successfully
+    - Edge Case: Missing or invalid data in required fields
+        - Expected Output: Error message prompting user to correct information
+
+- Test Case 2:  
+    - Input: Already an existing credit card holder
+    - Action: Submit new credit card application
+    - Expected Output: Application rejected with an appropriate message
+
+**2. Waiving Off Charges**  
+- Test Case 3:
+    - Input: Request to waive off an eligible fee (e.g. late payment, annual fee)
+    - Action: Bank reviews customer history 
+    - Expected Output: Fee waived off as a one-time courtesy, updated balance
+
+- Test Case 4:  
+    - Input: Request to waive off an ineligible fee
+    - Action: Bank reviews request
+    - Expected Output: Request rejected with justification
+
+**3. Redeeming Points**
+- Test Case 5: 
+    - Input: Redeem accumulated points for a reward (gift card, merchandise etc.)
+    - Action: Points redemption request
+    - Expected Output: Successful redemption, remaining points balance updated
+    - Edge Case: Not enough points for selected reward
+        - Expected Output: Error displayed, redemption prevented
+
+**4. Credit Limit Extension**
+- Test Case 6:
+    - Input: Evaluate customer's creditworthiness, payment history, income stability  
+    - Action: Bank decides to increase credit limit
+    - Expected Output: Credit limit increased, customer notified
+
+**5. Credit Limit Reduction**  
+- Test Case 7:
+    - Input: Changes in customer's financial situation or risk profile
+    - Action: Bank decides to reduce credit limit  
+    - Expected Output: Credit limit reduced, customer notified
+    - Edge Case: Reduce limit below existing outstanding balance
+        - Expected Output: Limit reduction rejected to prevent over-limit situation
+
+**6. Promotional Balance Transfers**
+- Test Case 8:  
+    - Input: Request balance transfer from other credit card with promotional terms
+    - Action: Initiate balance transfer
+    - Expected Output: Balance transferred successfully under promotional offer
+
+Non-Functional Test Cases:  
+
+- Test Case 9: Verify secure data transmission (SSL) during online application
+- Test Case 10: Check application workflow when internet connectivity is lost 
+- Test Case 11: Volume testing - Simulate high traffic of concurrent applications
+- Test Case 12: Usability testing of application form on different devices/browsers
+- Test Case 13: Verify PCI-DSS compliance for payment processing
+- Test Case 14: Security testing - SQL injection, XSS, CSRF for web application 
+- Test Case 15: Performance testing - Response times under load
+- Test Case 16: Check accessibility standards compliance (WCAG 2.1)
+
+The scenarios cover key functionalities like applying for a new card, fee waivers, redeeming rewards, updating credit limits and special balance transfer offers. The non-functional tests validate security, performance, usability and accessibility aspects.
