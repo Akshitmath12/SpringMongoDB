@@ -1,0 +1,11 @@
+UserID,Username,Email,DateOfBirth,AccountBalance,IsActive
+1,jdoe1,jdoe1@example.com,1984-07-23,2543.75,True
+2,asmith2,asmith2@example.net,1992-05-17,1489.20,False
+3,bjones3,bjones3@example.org,1977-11-02,6372.44,True
+4,cdavis4,cdavis4@example.com,1989-03-14,9812.00,True
+5,ewilson5,ewilson5@example.net,2000-10-29,120.55,False
+6,fthomas6,fthomas6@example.org,1965-04-08,8754.33,True
+7,gwhite7,gwhite7@example.com,1999-02-19,3245.67,True
+8,hmartin8,hmartin8@example.net,1980-09-12,4567.89,False
+9,jclark9,jclark9@example.org,1993-12-30,5321.44,True
+10,klewis10,klewis10@example.com,1970-06-06,7891.12,False
